@@ -1,0 +1,2235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>travelmate</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/ft.css">
+	<link rel="stylesheet" type="text/css" href="./css/star.css">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" href="./css/bxslider.css">
+	
+	
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&amp;subset=korean" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	
+
+	<script type="text/javascript">
+		$(window).load(function() {     
+			$('#loading').hide();   
+		}); 
+
+
+			
+	</script>
+<script src="./js/travelmate.js"></script>
+</head>
+<body>
+	<div id="loading"><img id="loading-image" src="./img/loading.PNG" alt="Loading..." /></div>
+
+
+	<div id="wrap">
+		<header id="header">
+			<div class="gnb">
+				<ul>
+					<li><a href="#">로그인</a></li>
+					<li><a href="#">마이페이지</a></li>
+					<li><a href="#">고객만족센터</a></li>
+					<li><a href="#">장바구니 <span id="cartCount">0</span></a></li>
+				</ul>
+			</div>
+			<div class="nav">
+				
+				<ul>
+					
+					<li class= " menu_thema active on " id="m1"><a href="#"><span>Vacation</span><span>휴가</span></a>	
+						<div class="navIn">
+							<div class="nav_mid">
+								
+								<ul>
+									<li class="logo"><a href="#"><img class="logo_img" src="./img/logo.png" alt="로고이미지"></a></li>
+									<li class="all "><a href="#">all</a>
+										<div class="all_menu">
+											<div class="all_menu_tit">
+												<span>휴가 전체메뉴</span>
+												<a href="#" class="close">close</a>
+											</div>
+
+											<ul>
+												<li>
+													<p>캐리어</p>
+													<dl>
+														<dt>캐리어(하드)</dt>
+														<dd><a href="#">기내캐리어</a></dd>
+														<dd><a href="#">중형캐리어</a></dd>
+														<dd><a href="#">대형캐리어</a></dd>
+													</dl>
+													<dl>
+														<dt>캐리어(소프트)</dt>
+														<dd><a href="#">기내캐리어</a></dd>
+														<dd><a href="#">중형캐리어</a></dd>
+														<dd><a href="#">대형캐리어</a></dd>
+													</dl>
+													<dl>
+														<dt>캐리어 커버/ACC</dt>
+														<dd><a href="#">캐리어커버</a></dd>
+														<dd><a href="#">캐리어벨트</a></dd>
+														<dd><a href="#">캐리어 네임택</a></dd>
+														<dd><a href="#">캐리어 스티커</a></dd>
+													</dl>
+												</li>
+												<li>
+													<p>여행수납/보조백</p>
+													<dl>
+														<dt>트래블팩</dt>
+														<dd><a href="#">의류수납/속옷팩</a></dd>
+														<dd><a href="#">워시팩/다용도팩</a></dd>
+														<dd><a href="#">신발파우치/여행파우치</a></dd>
+														<dd><a href="#">메이크업파우치</a></dd>
+													</dl>
+													<dl>
+														<dt>보조백/접이식백</dt>
+														<dd><a href="#">백팩/보스턴백/숄더백</a></dd>
+														<dd><a href="#">접이식백</a></dd>
+														<dd><a href="#">힙색/바디백</a></dd>
+														<dd><a href="#">도난방지 가방</a></dd>
+														<dd><a href="#">이민가방</a></dd>
+													</dl>
+													<dl>
+														<dt>여권커버/여행지갑</dt>
+														<dd><a href="#">여권커버</a></dd>
+														<dd><a href="#">오거나이저</a></dd>
+														<dd><a href="#">여행용 지갑</a></dd>
+													</dl>
+												</li>
+												<li>
+													<p>여행편의/안전</p>
+													<dl>
+														<dt>편의용품/식품</dt>
+														<dd><a href="#">목베개/안대/슬리퍼</a></dd>
+														<dd><a href="#">워김치/즉석식품</a></dd>
+														<dd><a href="#">기타 편의용품</a></dd>
+													</dl>
+													<dl>
+														<dt>안전/위생용품</dt>
+														<dd><a href="#">여행용 복대</a></dd>
+														<dd><a href="#">자물쇠/와이어</a></dd>
+														<dd><a href="#">위생/구급용품</a></dd>
+														<dd><a href="#">코스메틱</a></dd>
+													</dl>
+													<dl>
+														<dt>전자기기</dt>
+														<dd><a href="#">멀티아답터</a></dd>
+														<dd><a href="#">국가별 아답터</a></dd>
+														<dd><a href="#">휴대용 전자기기</a></dd>
+													</dl>
+												</li>
+												<li>
+													<p>여름의류/물놀이</p>
+													<dl>
+														<dt>래쉬가드</dt>
+														<dd><a href="#">여성 래쉬가드</a></dd>
+														<dd><a href="#">남성 래쉬가드</a></dd>
+													</dl>
+													<dl>
+														<dt>비키니/수영복</dt>
+														<dd><a href="#">와이어 비키니</a></dd>
+														<dd><a href="#">노와이어 비키니</a></dd>
+														<dd><a href="#">원피스/모노키니</a></dd>
+														<dd><a href="#">언더웨어(노라인)</a></dd>
+														<dd><a href="#">MEN'S</a></dd>
+													</dl>
+													<dl>
+														<dt>전비치웨어</dt>
+														<dd><a href="#">비치원피스</a></dd>
+														<dd><a href="#">탑/커버업</a></dd>
+														<dd><a href="#">비치팬츠/스커트</a></dd>
+														<dd><a href="#">MEN'S</a></dd>
+													</dl>
+													<dl>
+														<dt>물놀이용품/ACC</dt>
+														<dd><a href="#">방수팩/드라이색</a></dd>
+														<dd><a href="#">비치모자/신발</a></dd>
+														<dd><a href="#">비치타월/튜브</a></dd>
+														<dd><a href="#">기타 악세서리</a></dd>
+													</dl>
+												</li>
+												<li>
+													<p>여행상품/도서</p>
+													<dl>
+														<dt>여행상품</dt>
+														<dd><a href="#">테마여행 By 투어버킷</a></dd>
+														<dd><a href="#">자유여행 By 투어버킷</a></dd>
+													</dl>
+													<dl>
+														<dt>여행도서</dt>
+														<dd><a href="#">도서/가이드북</a></dd>
+													</dl>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class=""><a href="#">캐리어</a>
+										<div class="menu_sub">
+											<ul>
+												<li>
+													<dl>
+														<dt><a href="#">캐리어(하드)</a></dt>
+														<dd><a href="#">기내캐리어</a></dd>
+														<dd><a href="#">중형캐리어</a></dd>
+														<dd><a href="#">대형캐리어</a></dd>
+													</dl>
+												</li>
+												<li>
+													<dl>
+														<dt><a href="#">캐리어(소프트)</a></dt>
+														<dd><a href="#">기내캐리어</a></dd>
+														<dd><a href="#">중형캐리어</a></dd>
+														<dd><a href="#">대형캐리어</a></dd>
+													</dl>
+												</li>
+												<li>
+													<dl>
+														<dt><a href="#">캐리어 커버/ACC</a></dt>
+														<dd><a href="#">캐리어커버</a></dd>
+														<dd><a href="#">캐리어벨트</a></dd>
+														<dd><a href="#">캐리어 네임택</a></dd>
+														<dd><a href="#">캐리어 스티커</a></dd>
+													</dl>
+												</li>
+												<li></li>
+												<li></li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr01.jpg" alt=""></span>
+														<span class="text">여행마다 아답터를 따로 사야하나요?</span>
+													</a>
+												</li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr02.jpg" alt=""></span>
+														<span class="text">[댄디] TSA 특대형 28형/74cm 확장형 여행가방(S6255)</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class=""><a href="#">여행수납/보조백</a>
+										<div class="menu_sub">
+											<ul>
+												<li>
+													<dl>
+														<dt><a href="#">트래블팩</a></dt>
+														<dd><a href="#">의류수납/속옷팩</a></dd>
+														<dd><a href="#">워시팩/다용도팩</a></dd>
+														<dd><a href="#">신발파우치/여행파우치</a></dd>
+														<dd><a href="#">메이크업파우치</a></dd>
+													</dl>
+												</li>
+												<li>
+													<dl>
+														<dt><a href="#">보조백/접이식백</a></dt>
+														<dd><a href="#">백팩/보스턴백/숄더백</a></dd>
+														<dd><a href="#">접이식백</a></dd>
+														<dd><a href="#">힙색/바디백</a></dd>
+														<dd><a href="#">도난방지 가방</a></dd>
+														<dd><a href="#">이민가방</a></dd>
+													</dl>
+												</li>
+												<li>
+													<dl>
+														<dt><a href="#">여권커버/여행지갑</a></dt>
+														<dd><a href="#">여권커버</a></dd>
+														<dd><a href="#">오거나이저</a></dd>
+														<dd><a href="#">여행용 지갑</a></dd>
+													</dl>
+												</li>
+												<li></li>
+												<li></li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr03.jpg" alt=""></span>
+														<span class="text">여행을 도와줄 수납용품을 추천해</span>
+													</a>
+												</li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr04.jpg" alt=""></span>
+														<span class="text">[Travel Mate] 아이콘 멀티의류정리팩(TMW-501)</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="#">여행편의/안전</a>
+										<div class="menu_sub">
+											<ul>
+												<li>
+													<dl>
+														<dt><a href="#">편의용품/식품></a></dt>
+														<dd><a href="#">목베개/안대/슬리퍼</a></dd>
+														<dd><a href="#">김치/즉석식품</a></dd>
+														<dd><a href="#">기타 편의용품</a></dd>
+													</dl>
+												</li>
+												<li>
+													<dl>
+														<dt><a href="#">안전/위생용품</a></dt>
+														<dd><a href="#">여행용 복대</a></dd>
+														<dd><a href="#">자물쇠/와이어</a></dd>
+														<dd><a href="#">위생/구급용품</a></dd>
+														<dd><a href="#">코스메틱</a></dd>
+													</dl>
+												</li>
+												<li>
+													<dl>
+														<dt><a href="#">전자기기</a></dt>
+														<dd><a href="#">멀티아답터</a></dd>
+														<dd><a href="#">국가별 아답터</a></dd>
+														<dd><a href="#">휴대용 전자기기</a></dd>
+													</dl>
+												</li>
+												<li></li>
+												<li></li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr05.jpg" alt=""></span>
+														<span class="text">안전한 여행을 위한 TSA 자물쇠란?</span>
+													</a>
+												</li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr06.jpg" alt=""></span>
+														<span class="text">[Travel Mate] 여행용 PLUS 에어목베개(ANP-650)</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="#">여름의류/물놀이</a>
+										<div class="menu_sub">
+											<ul>
+												<li>
+													<dl>
+														<dt><a href="#">래쉬가드</a></dt>
+														<dd><a href="#">여성 래쉬가드</a></dd>
+														<dd><a href="#">남성 래쉬가드</a></dd>
+													</dl>
+												</li>
+												<li>
+													<dl>
+														<dt><a href="#">비키니/수영복</a></dt>
+														<dd><a href="#">와이어 비키니</a></dd>
+														<dd><a href="#">노와이어 비키니</a></dd>
+														<dd><a href="#">원피스/모노키니</a></dd>
+														<dd><a href="#">언더웨어(노라인)</a></dd>
+														<dd><a href="#">MEN'S</a></dd>
+													</dl>
+												</li>
+												<li>
+													<dl>
+														<dt><a href="#">비치웨어</a></dt>
+														<dd><a href="#">비치원피스</a></dd>
+														<dd><a href="#">탑/커버업</a></dd>
+														<dd><a href="#">비치팬츠/스커트</a></dd>
+														<dd><a href="#">MEN'S</a></dd>
+													</dl>
+												</li>
+												<li>
+													<dl>
+														<dt><a href="#">물놀이용품/ACC</a></dt>
+														<dd><a href="#">방수팩/드라이색</a></dd>
+														<dd><a href="#">비치모자/신발</a></dd>
+														<dd><a href="#">비치타월/튜브</a></dd>
+														<dd><a href="#">기타 악세서리</a></dd>
+													</dl>
+												</li>
+
+												<li></li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr07.jpg" alt=""></span>
+														<span class="text">해외여행에서 데이터 아껴주는 꿀팁</span>
+													</a>
+												</li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr08.jpg" alt=""></span>
+														<span class="text">[Superinc] SPRC LIXO 백(M1)</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="#">여행상품/도서</a>
+										<div class="menu_sub">
+											<ul>
+												<li>
+													<dl>
+														<dt><a href="#">여행상품</a></dt>
+														<dd><a href="#">테마여행 By 투어버킷</a></dd>
+														<dd><a href="#">자유여행 By 투어버킷</a></dd>
+													</dl>
+												</li>
+												<li>
+													<dl>
+														<dt><a href="#">여행도서</a></dt>
+														<dd><a href="#">도서/가이드북</a></dd>
+													</dl>
+												</li>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr09.jpg" alt=""></span>
+														<span class="text">네이버도 모르는 일본여행 머스트 쇼핑리스트</span>
+													</a>
+												</li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr10.jpg" alt=""></span>
+														<span class="text">모델 하루와 함께하는 세부 출사여행 (9/25 출발)</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+								<ul>
+									<li><a href="#">기획전</a></li>
+									<li><a href="#">세일</a></li>
+									<li><a href="#">브랜드</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">여행하라</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="menu_thema  " id="m2"><a href="#"><span>Business</span><span>비즈니스</span></a>
+						<div class="navIn">
+							<div class="nav_mid">
+								<ul>
+									<li class="all  "><a href="#">all</a>
+										<div class="all_menu">
+											<div class="all_menu_tit">
+												<span>휴가 전체메뉴</span>
+												<a href="#" class="close">close</a>
+											</div>
+											<ul>
+												<li>
+													<p>비즈니스 캐리어/가방</p>
+													<dl>
+														<dt>비즈니스 캐리어</dt>
+														<dd><a href="#">기내캐리어</a></dd>
+														<dd><a href="#">중형캐리어</a></dd>
+														<dd><a href="#">대형캐리어</a></dd>
+													</dl>
+													<dl>
+														<dt>비즈니스 캐리어 ACC</dt>
+														<dd><a href="#">캐리어커버/캐리어벨트</a></dd>
+														<dd><a href="#">캐리어 네임택</a></dd>
+													</dl>
+													<dl>
+														<dt>비즈니스 가방</dt>
+														<dd><a href="#">서류/노트북가방</a></dd>
+														<dd><a href="#">비즈니스 백팩/크로스백</a></dd>
+														<dd><a href="#">보스턴백/더플백</a></dd>
+													</dl>
+												</li>
+												<li>
+													<p>비즈니스 패션/스포츠</p>
+													<dl>
+														<dt>편의/수납</dt>
+														<dd><a href="#">목베개/안대</a></dd>
+														<dd><a href="#">의류수납/속옷팩</a></dd>
+														<dd><a href="#">워시팩/파우치</a></dd>
+														<dd><a href="#">위생용품</a></dd>
+													</dl>
+													<dl>
+														<dt>패션/잡화</dt>
+														<dd><a href="#">지갑/카드홀더</a></dd>
+													</dl>
+													<dl>
+														<dt>골프용품</dt>
+														<dd><a href="#">골프커버</a></dd>
+													</dl>
+												</li>
+												<li>
+													<p>비즈니스 전자/문구</p>
+													<dl>
+														<dt>전자기기/아답터</dt>
+														<dd><a href="#">멀티아답터</a></dd>
+														<dd><a href="#">스마트기기</a></dd>
+														<dd><a href="#">PC/노트북 기기</a></dd>
+														<dd><a href="#">디지털 파우치</a></dd>
+													</dl>
+													<dl>
+														<dt>노트/필기류</dt>
+														<dd><a href="#">여권커버/오거나이저</a></dd>
+														<dd><a href="#">노트/필기류</a></dd>
+													</dl>
+												</li>
+												<li>
+													<p>기념품</p>
+													<dl>
+														<dt>기념품</dt>
+														<dd><a href="#">전통문구/사무</a></dd>
+														<dd><a href="#">생활소품</a></dd>
+													</dl>
+												</li>
+												<li>
+													<p>비즈니스여행상품/도서</p>
+													<dl>
+														<dt>여행상품</dt>
+														<dd><a href="#">테마여행 By 투어버킷</a></dd>
+														<dd><a href="#">자유여행 By 투어버킷</a></dd>
+													</dl>
+													<dl>
+														<dt>여행도서</dt>
+														<dd><a href="#">도서</a></dd>
+													</dl>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="#">비즈니스 캐리어/가방</a>
+										<div class="menu_sub">
+											<ul>
+												<li>
+													<dl>
+														<dt><a href="#">비즈니스 캐리어</a></dt>
+														<dd><a href="#">기내캐리어</a></dd>
+														<dd><a href="#">중형캐리어</a></dd>
+														<dd><a href="#">대형캐리어</a></dd>
+													</dl>
+												</li>
+												<li>
+													<dl>
+														<dt><a href="#">비즈니스 캐리어 ACC</a></dt>
+														<dd><a href="#">캐리어커버/캐리어벨트</a></dd>
+														<dd><a href="#">캐리어 네임택</a></dd>
+													</dl>
+												</li>
+												<li>
+													<dl>
+														<dt><a href="#">비즈니스 가방</a></dt>
+														<dd><a href="#">서류/노트북가방</a></dd>
+														<dd><a href="#">비즈니스 백팩/크로스백</a></dd>
+														<dd><a href="#">보스턴백/더플백</a></dd>
+													</dl>
+												</li>
+
+												<li></li>
+												<li></li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr11.jpg" alt=""></span>
+														<span class="text">캐리어 소재 그것이 알고싶다</span>
+													</a>
+												</li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr12.jpg" alt=""></span>
+														<span class="text">[Sunco] 루베리카 스토퍼 TSA 기내용 20형/48cm 여행가방(HSZ1-48) - 블루</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="#">비즈니스 패션/스포츠</a>
+										<div class="menu_sub">
+											<ul>
+												<li>
+													<dl>
+														<dt><a href="#">편의/수납</a></dt>
+														<dd><a href="#">목베개/안대</a></dd>
+														<dd><a href="#">의류수납/속옷팩</a></dd>
+														<dd><a href="#">워시팩/파우치</a></dd>
+														<dd><a href="#">위생용품</a></dd>
+													</dl>
+												</li>
+												<li>
+													<dl>
+														<dt><a href="#">패션/잡화</a></dt>
+														<dd><a href="#">지갑/카드홀더</a></dd>
+													</dl>
+												</li>
+												<li>
+													<dl>
+														<dt><a href="#">골프용품</a></dt>
+														<dd><a href="#">골프커버</a></dd>
+													</dl>
+												</li>
+												<li></li>
+												<li></li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr13.jpg" alt=""></span>
+														<span class="text">기내 편의 용품으로 이코노미도 퍼스트 클래스처럼</span>
+													</a>
+												</li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr14.jpg" alt=""></span>
+														<span class="text">[Go Travel] 면도기 보호 케이스(437)</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="#">비즈니스 전자/문구</a>
+										<div class="menu_sub">
+											<ul>
+												<li>
+													<dl>
+														<dt><a href="#">전자기기/아답터</a></dt>
+														<dd><a href="#">멀티아답터</a></dd>
+														<dd><a href="#">스마트기기</a></dd>
+														<dd><a href="#">PC/노트북 기기</a></dd>
+														<dd><a href="#">디지털 파우치</a></dd>
+													</dl>
+												</li>
+												<li>
+													<dl>
+														<dt><a href="#">노트/필기류</a></dt>
+														<dd><a href="#">여권커버/오거나이저</a></dd>
+														<dd><a href="#">노트/필기류</a></dd>
+													</dl>
+												</li>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr15.jpg" alt=""></span>
+														<span class="text">해외여행에서 데이터 아껴주는 TIP!</span>
+													</a>
+												</li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr16.jpg" alt=""></span>
+														<span class="text">[엘라고] Aluminum lightning cable</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="#">기념품</a>
+										<div class="menu_sub">
+											<ul>
+												<li>
+													<dl>
+														<dt><a href="#">기념품</a></dt>
+														<dd><a href="#">전통문구/사무</a></dd>
+														<dd><a href="#">생활소품</a></dd>
+													</dl>
+												</li>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr17.jpg" alt=""></span>
+														<span class="text">[엘라고] Aluminum lightning cable</span>
+													</a>
+												</li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr18.jpg" alt=""></span>
+														<span class="text">[인문공학] 통일 랜드마크배지</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="#">비즈니스여행상품/도서</a>
+										<div class="menu_sub">
+											<ul>
+												<li>
+													<dl>
+														<dt><a href="#">여행상품</a></dt>
+														<dd><a href="#">테마여행 By 투어버킷</a></dd>
+														<dd><a href="#">자유여행 By 투어버킷</a></dd>
+													</dl>
+												</li>
+												<li>
+													<dl>
+														<dt><a href="#">여행도서</a></dt>
+														<dd><a href="#">도서</a></dd>
+													</dl>
+												</li>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr19.jpg" alt=""></span>
+														<span class="text">홍콩 루프탑 TOP5</span>
+													</a>
+												</li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr20.jpg" alt=""></span>
+														<span class="text">[Lonely Planet] 안녕한 하루하루</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+								<ul>
+									<li><a href="#">기획전</a></li>
+									<li><a href="#">세일</a></li>
+									<li><a href="#">브랜드</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">여행하라</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="menu_thema" id="m3"><a href="#"><span>Backpacking</span><span>배낭여행</span></a>
+						<div class="navIn">
+							<div class="nav_mid">
+								<ul>
+									<li class="all "><a href="#">all</a>
+										<div class="all_menu">
+											<div class="all_menu_tit">
+												<span>휴가 전체메뉴</span>
+												<a href="#" class="close">close</a>
+											</div>
+											<ul>
+												<li>
+													<p>배낭여행 용품</p>
+													<dl>
+														<dt>여행배낭</dt>
+														<dd><a href="#">소형배낭(28L 이하)</a></dd>
+														<dd><a href="#">중형배낭(40L 이하)</a></dd>
+														<dd><a href="#">대형배낭(42L 이상)</a></dd>
+														<dd><a href="#">배낭커버/악세서리</a></dd>
+													</dl>
+													<dl>
+														<dt>침낭/매트</dt>
+														<dd><a href="#">침낭</a></dd>
+														<dd><a href="#">냅색</a></dd>
+													</dl>
+												</li>
+												<li>
+													<p>배낭여행 소품</p>
+													<dl>
+														<dt>도난방지 가방</dt>
+														<dd><a href="#">해킹/도난방지 가방</a></dd>
+													</dl>
+													<dl>
+														<dt>안전/구급/위생용품</dt>
+														<dd><a href="#">여행용 복대/목걸이지갑</a></dd>
+														<dd><a href="#">자물쇠/와이어</a></dd>
+														<dd><a href="#">위생/벌레 퇴치용품</a></dd>
+														<dd><a href="#">구급/호신용품</a></dd>
+														<dd><a href="#">비상식량</a></dd>
+													</dl>
+													<dl>
+														<dt>아웃도어 잡화</dt>
+														<dd><a href="#">압축팩/우의</a></dd>
+														<dd><a href="#">모자/넥워머/스카프</a></dd>
+														<dd><a href="#">스포츠타월</a></dd>
+														<dd><a href="#">휴대용 물병</a></dd>
+														<dd><a href="#">멀티툴</a></dd>
+													</dl>
+												</li>
+												<li>
+													<p>캠핑 용품</p>
+													<dl>
+														<dt>캠핑소품</dt>
+														<dd><a href="#">취사도구/식기류</a></dd>
+														<dd><a href="#">랜턴/손전등</a></dd>
+														<dd><a href="#">텐트/타프/해먹</a></dd>
+													</dl>
+												</li>
+												<li>
+													<p>여행상품/도서</p>
+													<dl>
+														<dt>여행상품</dt>
+														<dd><a href="#">테마여행 By 투어버킷</a></dd>
+														<dd><a href="#">자유여행 By 투어버킷</a></dd>
+													</dl>
+													<dl>
+														<dt>여행도서</dt>
+														<dd><a href="#">론니 플레닛</a></dd>
+														<dd><a href="#">도서</a></dd>
+													</dl>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="#">배낭여행 용품</a>
+										<div class="menu_sub">
+											<ul>
+												<li>
+													<dl>
+														<dt><a href="#">여행배낭</a></dt>
+														<dd><a href="#">소형배낭(28L 이하)</a></dd>
+														<dd><a href="#">중형배낭(40L 이하)</a></dd>
+														<dd><a href="#">대형배낭(42L 이상)</a></dd>
+														<dd><a href="#">배낭커버/악세서리</a></dd>
+													</dl>
+												</li>
+												<li>
+													<dl>
+														<dt><a href="#">침낭/매트</a></dt>
+														<dd><a href="#">침낭</a></dd>
+														<dd><a href="#">냅색</a></dd>
+													</dl>
+												</li>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr21.jpg" alt=""></span>
+														<span class="text">캠핑의 낭만을 UP시켜줄 방법</span>
+													</a>
+												</li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr22.jpg" alt=""></span>
+														<span class="text">[Travel Mate] 50L - 마로크 여행용 배낭(TBP8-50GR) - 마르케쉬 그린</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="#">배낭여행 소품</a>
+										<div class="menu_sub">
+											<ul>
+												<li>
+													<dl>
+														<dt><a href="#">도난방지 가방</a></dt>
+														<dd><a href="#">해킹/도난방지 가방</a></dd>
+													</dl>
+												</li>
+												<li>
+													<dl>
+														<dt><a href="#">안전/구급/위생용품</a></dt>
+														<dd><a href="#">여행용 복대/목걸이지갑</a></dd>
+														<dd><a href="#">자물쇠/와이어</a></dd>
+														<dd><a href="#">위생/벌레 퇴치용품</a></dd>
+														<dd><a href="#">구급/호신용품</a></dd>
+														<dd><a href="#">비상식량</a></dd>
+													</dl>
+												</li>
+												<li>
+													<dl>
+														<dt><a href="#">아웃도어 잡화</a></dt>
+														<dd><a href="#">압축팩/우의</a></dd>
+														<dd><a href="#">모자/넥워머/스카프</a></dd>
+														<dd><a href="#">스포츠타월</a></dd>
+														<dd><a href="#">휴대용 물병</a></dd>
+														<dd><a href="#">멀티툴</a></dd>
+													</dl>
+												</li>
+												<li></li>
+												<li></li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr23.jpg" alt=""></span>
+														<span class="text">한국 음식 그리울 땐 여행가서 뭐 먹지?</span>
+													</a>
+												</li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr24.jpg" alt=""></span>
+														<span class="text">[KAVU] 피셔맨즈 치을바 - Moss</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="#">캠핑 용품</a>
+										<div class="menu_sub">
+											<ul>
+												<li>
+													<dl>
+														<dt><a href="#">캠핑소품</a></dt>
+														<dd><a href="#">취사도구/식기류</a></dd>
+														<dd><a href="#">랜턴/손전등</a></dd>
+														<dd><a href="#">텐트/타프/해먹</a></dd>
+													</dl>
+												</li>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr25.jpg" alt=""></span>
+														<span class="text">여행자를 위한 아이디어 여행용품!</span>
+													</a>
+												</li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr26.jpg" alt=""></span>
+														<span class="text">[블레스] 여행용 전기 코펠(TC50BK)</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="#">여행상품/도서</a>
+										<div class="menu_sub">
+											<ul>
+												<li>
+													<dl>
+														<dt><a href="#">여행상품</a></dt>
+														<dd><a href="#">테마여행 By 투어버킷</a></dd>
+														<dd><a href="#">자유여행 By 투어버킷</a></dd>
+													</dl>
+												</li>
+												<li>
+													<dl>
+														<dt><a href="#">여행도서</a></dt>
+														<dd><a href="#">론니 플레닛</a></dd>
+														<dd><a href="#">여행지도</a></dd>
+													</dl>
+												</li>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr27.jpg" alt=""></span>
+														<span class="text">코타키나발루, 산과 바다와 하늘을 내품에</span>
+													</a>
+												</li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr28.jpg" alt=""></span>
+														<span class="text">[Lonely Planet] 푸드 러버, 세계음식을 여행하다</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+								<ul>
+									<li><a href="#">기획전</a></li>
+									<li><a href="#">세일</a></li>
+									<li><a href="#">브랜드</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">여행하라</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class=" menu_thema" id="m4"><a href="#"><span>Weekend</span><span>주말여행</span></a>
+						<div class="navIn">
+							<div class="nav_mid">
+								<ul>
+									<li class="all "><a href="#">all</a>
+										<div class="all_menu">
+											<div class="all_menu_tit">
+												<span>휴가 전체메뉴</span>
+												<a href="#" class="close">close</a>
+											</div>
+											<ul>
+												<li>
+													<p>키즈/반려동물</p>
+													<dl>
+														<dt>키즈캐리어/가방</dt>
+														<dd><a href="#">유/아동용 캐리어</a></dd>
+														<dd><a href="#">유/아동용 가방</a></dd>
+													</dl>
+													<dl>
+														<dt>키즈잡화</dt>
+														<dd><a href="#">목베개</a></dd>
+														<dd><a href="#">여·남아 수영복</a></dd>
+														<dd><a href="#">기타 ACC</a></dd>
+													</dl>
+												</li>
+												<li>
+													<p>피크닉/주말여행</p>
+													<dl>
+														<dt>Weekend Bag</dt>
+														<dd><a href="#">1박2일 캐리어</a></dd>
+														<dd><a href="#">보스턴/접이식백</a></dd>
+														<dd><a href="#">데일리백</a></dd>
+													</dl>
+													<dl>
+														<dt>피크닉 용품</dt>
+														<dd><a href="#">피크닉 가방</a></dd>
+														<dd><a href="#">도시락/물병/식기류</a></dd>
+														<dd><a href="#">피크닉 소품</a></dd>
+													</dl>
+												</li>
+												<li>
+													<p>레저/패밀리</p>
+													<dl>
+														<dt>Car ACC</dt>
+														<dd><a href="#">스마트기기</a></dd>
+														<dd><a href="#">자동차 악세서리</a></dd>
+													</dl>
+												</li>
+												<li>
+													<p>여행상품/도서</p>
+													<dl>
+														<dt>여행상품</dt>
+														<dd><a href="#">테마여행 By 투어버킷</a></dd>
+														<dd><a href="#">자유여행 By 투어버킷</a></dd>
+													</dl>
+													<dl>
+														<dt>여행도서</dt>
+														<dd><a href="#">도서</a></dd>
+													</dl>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="#">키즈/반려동물</a>
+										<div class="menu_sub">
+											<ul>
+												<li>
+													<dl>
+														<dt><a href="#">키즈캐리어/가방</a></dt>
+														<dd><a href="#">유/아동용 캐리어</a></dd>
+														<dd><a href="#">유/아동용 가방</a></dd>
+													</dl>
+												</li>
+												<li>
+													<dl>
+														<dt><a href="#">키즈잡화</a></dt>
+														<dd><a href="#">목베개</a></dd>
+														<dd><a href="#">여·남아 수영복</a></dd>
+														<dd><a href="#">기타 ACC</a></dd>
+													</dl>
+												</li>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr29.jpg" alt=""></span>
+														<span class="text">내 작은 여행소품을 위한 트래블 파우치!</span>
+													</a>
+												</li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr30.jpg" alt=""></span>
+														<span class="text">[Trunki] 트렁키 안전벨트 패드 - 블루</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="#">피크닉/주말여행</a>
+										<div class="menu_sub">
+											<ul>
+												<li>
+													<dl>
+														<dt><a href="#">Weekend Bag</a></dt>
+														<dd><a href="#">1박2일 캐리어</a></dd>
+														<dd><a href="#">보스턴/접이식백</a></dd>
+														<dd><a href="#">데일리백</a></dd>
+													</dl>
+												</li>
+												<li>
+													<dl>
+														<dt><a href="#">피크닉 용품</a></dt>
+														<dd><a href="#">피크닉 가방</a></dd>
+														<dd><a href="#">도시락/물병/식기류</a></dd>
+														<dd><a href="#">피크닉 소품</a></dd>
+													</dl>
+												</li>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr31.jpg" alt=""></span>
+														<span class="text">해외여행에서 데이터 아껴주는 꿀팁</span>
+													</a>
+												</li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr32.jpg" alt=""></span>
+														<span class="text">[아홉] 스티커 트래블 북</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="#">레저/패밀리</a>
+										<div class="menu_sub">
+											<ul>
+												<li>
+													<dl>
+														<dt><a href="#">Car ACC</a></dt>
+														<dd><a href="#">스마트기기</a></dd>
+														<dd><a href="#">자동차 악세서리</a></dd>
+													</dl>
+												</li>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr33.jpg" alt=""></span>
+														<span class="text">한국 음식 그리울 땐, 여행가서 뭐 먹지?</span>
+													</a>
+												</li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr34.jpg" alt=""></span>
+														<span class="text">[SKY BORNE] 스탠다드 폴딩 숄더백(SB02-NY) - 네이비</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="#">여행상품/도서</a>
+										<div class="menu_sub">
+											<ul>
+												<li>
+													<dl>
+														<dt><a href="#">여행상품</a></dt>
+														<dd><a href="#">테마여행 By 투어버킷</a></dd>
+														<dd><a href="#">자유여행 By 투어버킷</a></dd>
+													</dl>
+												</li>
+												<li>
+													<dl>
+														<dt><a href="#">여행도서</a></dt>
+														<dd><a href="#">여행지도</a></dd>
+													</dl>
+												</li>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr35.jpg" alt=""></span>
+														<span class="text">여행자를 위한 아이디어 여행용품!</span>
+													</a>
+												</li>
+												<li class="bnr_area">
+													<a href="#">
+														<span class="img"><img src="./img/li_bnr36.jpg" alt=""></span>
+														<span class="text">[Travel Mate] 여행용 PLUS 에어목베개(ANP-650)</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+								<ul>
+									<li><a href="#">기획전</a></li>
+									<li><a href="#">세일</a></li>
+									<li><a href="#">브랜드</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">여행하라</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="search">
+						<a href="#" class="btn">search</a>
+						<div class="search_box">
+							<div>
+								<a href="#" class="search_icon">search</a>
+								<input type="text" name="serchAreaText" placeholder="검색어를 입력해 주세요.">
+							</div>
+							<ul class="search_list">
+								<li><a href="캐리어페이지로이동합니다" >캐리어</a></li>
+								<li><a href="여행백팩페이지로이동합니다">여행백팩</a></li>
+								<li><a href="여행먹거리페이지로이동합니다">여행먹거리</a></li>
+								<li><a href="멀티파우치페이지로이동합니다">멀티파우치</a></li>
+								<li><a href="폴딩백페이지로이동합니다">폴딩백</a></li>
+								<li><a href="어댑터페이지로이동합니다">어댑터</a></li>
+								<li><a href="목베게페이지로이동합니다">목베게</a></li>
+								<li><a href="침낭페이지로이동합니다">침낭</a></li>
+								<li><a href="이민가방페이지로이동합니다">이민가방</a></li>
+								<li><a href="트래블메이트페이지로이동합니다">트래블메이트</a></li>
+							</ul>
+							<!-- <a href="이겅ㄴ가" class="close"></a> -->
+						</div>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+		<div id="main">
+			<nav class="breadcrumb">
+				<ul>
+					<li class="home"><a href="#">홈</a></li>
+					<li class=""><a href="#">캐리어</a>
+						<div>
+							<ul>
+								<li><a href="#">캐리어</a></li>
+								<li><a href="#">여행수납/보조백</a></li>
+								<li><a href="#">여행편의/안전</a></li>
+								<li><a href="#">여름의류/물놀이</a></li>
+								<li><a href="#">여행상품/도서</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">캐리어(하드)</a>
+						<div>
+							<ul>
+								<li><a href="#">캐리어(하드)</a></li>
+								<li><a href="#">캐리어(소프트)</a></li>
+								<li><a href="#">캐리어 커버/ACC</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">대형캐리어</a>
+						<div>
+							<ul>
+								<li><a href="#">ALL</a></li>
+								<li><a href="#">기내캐리어</a></li>
+								<li><a href="#">중형캐리어</a></li>
+								<li><a href="#">대형캐리어</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<div class="product_area">
+				<div class="product_order">
+					<div class="left">
+						<div class="prd_view">
+							<ul>
+								<li><img src="./img/A1.jpg" alt=""></li>
+								<li><img src="./img/A1.jpg" alt=""></li>
+								<li><img src="./img/A2.jpg" alt=""></li>
+								<li><img src="./img/A3.jpg" alt=""></li>
+								<li><img src="./img/A4.jpg" alt=""></li>
+								
+							</ul>
+							<div class="icon">
+								<img src="./img/icon_sale.png" alt="">
+								<img src="./img/icon_gift.png" alt="">
+								<img src="./img/icon_free.png" alt="">
+							</div>
+						</div>
+						<div class="prd_view_thumb">
+							<div class="prd_view_thumb_in">
+								<ul>
+									<li><a href="#" data-slide-index="0"><img src="./img/A1.jpg" alt=""></a></li>
+									<li><a href="#" data-slide-index="1"><img src="./img/A1.jpg" alt=""></a></li>
+									<li><a href="#" data-slide-index="2"><img src="./img/A2.jpg" alt=""></a></li>
+									<li><a href="#" data-slide-index="3"><img src="./img/A3.jpg" alt=""></a></li>
+									<li><a href="#" data-slide-index="4"><img src="./img/A4.jpg" alt=""></a></li>
+
+								</ul>
+							</div>
+						</div>
+						<div class="prd_comment">
+							<ul>
+								<li>
+									<div class="title">상품후기(<span>1</span>)</div>
+									<div class="star_area">
+										<a href="#">
+											<span class="star_sel_set">
+												<span class="star_sel star_100">평점 5별개 중</span>
+												<strong class="num">5.0</strong>
+											</span>
+										</a>
+									</div>
+								</li>
+								<li class="toggle_area">
+									<div class="title">관련 기획전 (<span>1</span>)</div>
+									<div class="toggle_con">
+										<ul>
+											<li><a href="#">레전드워커 사은품 증정 프로모션</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="right">
+						<div class="basic_info">
+							<div class="prd_feature">11월 프로모션</div>
+							<div class="share_sns">
+								<a href="#"></a>
+								<div>
+									<a href="#" class="facebook"></a>
+									<a href="#" class="twitter"></a>
+									<a href="#" class="url"></a>
+								</div>
+							</div>
+							<h4 class="prd_name">[레전드워커] 프리미엄 메탈 PC100% TSA 특대형 28형/70cm 여행가방(6702-70)</h4>
+							<dl>
+								<dt>레전드워커</dt>
+								<dd>상품코드 <span>LEGCAH0006B2800</span></dd>
+							</dl>
+						</div>
+						<div class="price_info">
+							<div class="price_table">
+								<table>
+									<!-- <caption></caption>
+									<colgroup><col><col></colgroup> -->
+									<tbody>
+										<tr>
+											<th>판매가</th>
+											<td><span class="base">370,000원</span></td>
+										</tr>
+										<tr>
+											<th>할인가</th>
+											<td>
+												<span class="discount"><b>333,000</b>원</span>
+												<span class="percent">10%</span>
+
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="price_table">
+								<table>
+									<caption></caption>
+									<colgroup><col><col></colgroup>
+									<tbody>
+										<tr>
+											<th>마일리지</th>
+											<td>3,800점
+												<i class="tip ">tip
+													<span>마일리지 적립은 수령한 날로부터<br> 일주일 뒤 일괄 적립됩니다.</span>
+												</i>
+											</td>
+										</tr>
+										<tr>
+											<th>배송구분</th>
+											<td>	Travel Mate 직배송</td>
+										</tr>
+										<tr>
+											<th>사은품</th>
+											<td>[레전드워커] 6종 파우치 사은품 1개
+												<i class="tip ">
+													<em></em>
+													<span> 본 상품을 구매하시면, [레전드워커] 6종 파우치 사은품를 드립니다.</span>
+												</i>
+											</td>
+										</tr>
+										<tr>
+											<th>브랜드</th>
+											<td>레전드워커<a href="#" class="btn_brand_more">브랜드 전체보기</a></td>
+										</tr>
+										<tr>
+											<th>제조</th>
+											<td></td>
+										</tr>
+										<tr>
+											<th>옵션</th>
+											<td>
+												<div class="select_ty reset">
+													<a href="javascript:void(0);" class="">색상</a>
+													<!-- <select name="selectProduct" class="option" id="">
+														<option value="">색상</option>
+														<option value="333,000">민트그린</option>
+														<option value="333,000">핑크</option>
+														<option value="333,000">카본화이트</option>
+														<option value="333,000">색상</option>
+
+													</select> -->
+													<div class="option">
+														<ul class="">
+															<li class="noti"><a href="#">카본블랙(품절)</a><a href="#" class="noti_a">입고 알림</a></li>
+															<li><a href="#" class="opt" title ="green" price ="333000">민트그린</a></li>
+															<li><a href="#" class="opt" title ="pink" price ="333000">핑크</a></li>
+															<li><a href="#" class="opt" title ="white" price ="333000">카본화이트</a></li>
+														</ul>
+													</div>
+													
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="price_option main_option">
+								<table>
+									<tbody>
+									
+									</tbody>
+								</table>
+							</div>
+							<dl class="price_total">
+								<dt>총 상품금액</dt>
+								<dd><b  class="main_total">0</b>원</dd>
+							</dl>
+							<div class="price_buy">
+								<a href="#" class="btn_m btn_co02" name="btnBuy">바로 구매하기</a>
+								<a href="#" class="btn_m btn_co03" id="cartBtn1" name="btnAddCart1">장바구니 담기</a>
+								<a href="#" class="btn_dip on" id="wishBtn1" name="btnAddWishList1">찜</a>
+							</div>
+							<div class="naver_chk">
+								<div><p>네이버페이 구매시 사은품&할인혜택이 적용되지 않습니다.</p></div>
+								<div class="npay_storebtn_bx npay_type_A_2" id="NC_ID_1541490739174293">
+									<div class="npay_button_box">
+										<div class="npay_button">
+											<div class="npay_text">
+												<span class="npay_blind">NAVER 네이버 ID로 간편구매 네이버페이</span>
+											</div>
+											<div class="npay_btn_list">
+												<div class="npay_btn_item">
+													<a href="#" class="npay_btn_link btn_green"><span class="npay_blind">네이버페이 구매하기</span></a>
+												</div>
+												<div class="npay_btn_item btn_width">
+													<a href="#" class="npay_btn_link npay_btn_zzim"><span class="npay_blind">찜</span></a>
+												</div>
+											</div>
+										</div>
+										<div class="npay_event">
+											<a href="#">
+												<strong class="event_title">[네이버 페이]</strong>
+												<span class="event_link">포인트 잘 쓰는 법</span>
+											</a>
+											
+											<a href="#" class="next contrls_btn"><span>다음</span></a>
+											<a href="#" class="prev contrls_btn"><span>이전</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="prd_fixed  ">
+						<a href="#" class="option_btn">옵션 선택 열기</a>
+						<div class="option_box">
+							<h4 class="prd_name">[레전드워커] 프리미엄 메탈 PC100% TSA 특대형 28형/70cm 여행가방(6702-70)</h4>
+							<ul>
+								<li class="left">
+									<div class="prive_table">
+										<table>
+											<tbody>
+												<tr>
+													<th class="ve_to">옵션</th>
+													<td>
+														<div class="select_ty reset">
+															<a href="javascript:void(0);" class="">색상</a>
+															<ul class="option">
+																<li class="noti"><a href="#">카본블랙(품절)</a><a href="#" class="noti_a">입고 알림</a></li>
+																<li><a href="#">민트그린</a></li>
+																<li><a href="#">핑크</a></li>
+																<li><a href="#">카본화이트</a></li>
+															</ul>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="price_option">
+										<table>
+											<tbody>
+												
+											</tbody>
+										</table>
+
+									</div>
+								</li>
+								<li class="right">
+									<div class="price_total">
+										<dl>
+											<dt>총 상품금액</dt>
+											<dd><b class="priceTotalB">0</b>원</dd>
+										</dl>
+										
+									</div>
+									<div class="price_buy">
+										<a href="#" class="btn_m btn_co02" name="btnBuy">바로 구매하기</a>
+								<a href="#" class="btn_m btn_co03" id="cartBtn2" name="btnAddCart2">장바구니 담기</a>
+								<a href="#" class="btn_dip on" id="wishBtn2" name="btnAddWishList2">찜</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="prd_bnr"><a href="#"><img src="./img/prd_bnr.jpg" alt=""></a></div>
+
+				<div class="prd_like">
+					<h4 class="tit_h4">추천상품</h4>
+					<ul>
+						<li>
+							<div class="produnit">
+								<a href="#">
+									<span class="thumb"><img src="./img/prd_like01.jpg" alt=""></span>
+									<span class="brand">레전드워커</span>
+									<span class="title">[레전드워커] 프리미엄 메탈 PC100% TSA 수하물 25형/64cm 여행가방(6702-64)</span>
+									<span class="price">
+										<span class="base">340,000</span>
+										<span class="discount">180,000</span>
+									</span>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="produnit">
+								<a href="#">
+									<span class="thumb"><img src="./img/prd_like02.jpg" alt=""></span>
+									<span class="brand">레전드워커</span>
+									<span class="title">[레전드워커] 프리미엄 메탈 PC100% TSA 수하물 23형/58cm 여행가방(6702-58)</span>
+									<span class="price">
+										<span class="base">310,000</span>
+										<span class="discount">170,000</span>
+									</span>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="produnit">
+								<a href="#">
+									<span class="thumb"><img src="./img/prd_like03.jpg" alt=""></span>
+									<span class="brand">트래블메이트</span>
+									<span class="title">[Travel Mate] 3다이얼 케이블자물쇠(FSL-200)</span>
+									<span class="price">
+										<span class="base">8,500</span>
+										<span class="discount">7,600</span>
+									</span>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="produnit">
+								<a href="#">
+									<span class="thumb"><img src="./img/prd_like04.jpg" alt=""></span>
+									<span class="brand">인디고</span>
+									<span class="title">[Indigo Book] 어느새 운동할 나이가 되었네요</span>
+									<span class="price">
+										<span class="base">12,800</span>
+										<span class="discount">11,600</span>
+									</span>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="produnit">
+								<a href="#">
+									<span class="thumb"><img src="./img/prd_like05.jpg" alt=""></span>
+									<span class="brand">인디고</span>
+									<span class="title">[Indigo Book] 먹는 즐거움은 포기할 수 없어!</span>
+									<span class="price">
+										<span class="base">12,800</span>
+										<span class="discount">11,600</span>
+									</span>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="produnit">
+								<a href="#">
+									<span class="thumb"><img src="./img/prd_like06.jpg" alt=""></span>
+									<span class="brand">인디고</span>
+									<span class="title">[Indigo Book] 당신에게 행복을 선물하고 싶어요</span>
+									<span class="price">
+										<span class="base">9,800</span>
+										<span class="discount">8,900</span>
+									</span>
+								</a>
+							</div>
+						</li>
+					
+
+						
+						<li>
+							
+							<div class="produnit">
+								<a href="#">
+									<span class="thumb"><img src="./img/prd_like07.jpg" alt=""></span>
+									<span class="brand">인디고</span>
+									<span class="title">[Indigo Book] 밤과 노래</span>
+									<span class="price">
+										<span class="base">13,500</span>
+										<span class="discount">12,200</span>
+									</span>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="produnit">
+								<a href="#">
+									<span class="thumb"><img src="./img/prd_like08.jpg" alt=""></span>
+									<span class="brand">하바나비치</span>
+									<span class="title">[Havana beach] 남성상의_레인보우도트 집업 래쉬가드</span>
+									<span class="price">
+										<span class="base">38,900</span>
+										<span class="discount">38,900</span>
+									</span>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="produnit">
+								<a href="#">
+									<span class="thumb"><img src="./img/prd_like09.jpg" alt=""></span>
+									<span class="brand">빅마우스</span>
+									<span class="title">[빅마우스] 레인보우 비치블랭킷 & 타월</span>
+									<span class="price">
+										<span class="base">33,000</span>
+										<span class="discount">33,000</span>
+									</span>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="produnit">
+								<a href="#">
+									<span class="thumb"><img src="./img/prd_like10.jpg" alt=""></span>
+									<span class="brand">하바나비치</span>
+									<span class="title">[Havana beach] 비키니_프릴 팬지 2p</span>
+									<span class="price">
+										<span class="base">31,200</span>
+										<span class="discount">31,200</span>
+									</span>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="produnit">
+								<a href="#">
+									<span class="thumb"><img src="./img/prd_like11.jpg" alt=""></span>
+									<span class="brand">슈퍼링크</span>
+									<span class="title">[Superinc] 파코테-A 크롭 래쉬가드(SW6CR016)</span>
+									<span class="price">
+										<span class="base">79,000</span>
+										<span class="discount">47,400</span>
+									</span>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="produnit">
+								<a href="#">
+									<span class="thumb"><img src="./img/prd_like12.jpg" alt=""></span>
+									<span class="brand">트래블메이트</span>
+									<span class="title">[Travel Mate] 아이콘 멀티의류정리팩(TMW-501)</span>
+									<span class="price">
+										<span class="base">17,000</span>
+										<span class="discount">15,300</span>
+									</span>
+								</a>
+							</div>
+						</li>
+					</ul>
+					
+				</div>
+				<div id="prd_detail_con01" class="prd_detail  con01" >
+					<div class="tab aaa">
+						<ul>
+							<li class="on"><a href="#">상품상세정보</a></li>
+							<li><a href="#">상품후기(<em class="num">1</em>)</a></li>
+							<li><a href="#">상품Q&A(<em class="num">1</em>)</a></li>
+							<li><a href="#">배송/교환/반품</a></li>
+						</ul>
+					</div>
+					<div class="product_detail"> 
+						<div>
+							<img src="./img/content01.jpg" alt="">
+							<img src="./img/content02.jpg" alt="">
+							<img src="./img/content03.jpg" alt="">
+							<img src="./img/content04.jpg" alt="">
+							<img src="./img/content05.jpg" alt="">
+							<img src="./img/content06.jpg" alt="">
+							<img src="./img/content07.jpg" alt="">
+							<img src="./img/content08.jpg" alt="">
+							<img src="./img/content09.jpg" alt="">
+							<img src="./img/content10.jpg" alt="">
+							<img src="./img/content11.jpg" alt="">
+						</div>
+					</div>
+					<div class="table_head">
+						<h5 class="tit_h5 left">항공사별 수하물 기준표</h5>
+						<a href="#" class="detail_btn">자세히보기</a>
+					</div>
+					<div class="table">
+						<table>
+							<!-- <colgroup>
+								<col span="1" style="width: 15%;">
+								<col span="1" style="width: 19%;">
+								<col span="1" style="width: 33%;">
+								<col span="1" style="width: 33%;">
+							</colgroup> -->
+							<thead>
+								<tr>
+									<th scope="col" colspan="2">좌석 등급</th>
+									<th scope="col">무료 수하물 허용량</th>
+									<th scope="col">크기 (가로 x 세로 x 높이)</th>
+									
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row" rowspan="2" class="left">기내수하물</th>
+									<td class="left">
+										<p>이코노미석</p>
+										<p>비지니스석</p>
+										<p>퍼스트클래스석</p>
+									</td>
+									<td class="left">
+										<p>휴대수하물 1개 + 추가 허용품목 1개</p>
+										<p>휴대 수하물의 무개 10kg 이하</p>
+									</td>
+									<td>
+										<span class="prd_exp_size">
+											3면의 합 <em class="t_point">115m</em>이하
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="3" class="left">※ 추가 허용 품목: 노트북, 컴퓨터, 소형악기, 서류가방, 핸드백, 유모차 등</td>
+								</tr>
+								<tr>
+									<th scope="row" class="left">위탁수하물</th>
+									<td class="left">
+										<p>이코노미석</p>
+										<p>비지니스석</p>
+										<p>퍼스트클래스석</p>
+									</td>
+									<td class="left">
+										<p>미주구간 위탁수하물 2개</p>
+										<p>미주 외구간 위탁수하물 1개</p>
+										<p>위탁수하물 무게 23kg이하</p>
+									</td>
+									<td>
+										<span class="prd_exp_size">
+											3면의 합 <em class="t_point">158m</em>이하
+										</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div> 	
+				<div class="prd_review con02">
+					<h5 class="tit_h5">상품후기 (<em class="t_point">1</em>)</h5>
+					<div class="product_review">
+						<div class="coupon_guide">
+							<ul class="list">
+								<li>
+									<span class="img">
+										<strong class="t_point">30,000 <em>원</em></strong>
+										<span class="s_txt">베스트 후기 할인쿠폰</span>
+									</span>
+									<span class="txt">
+										매월 베스트 포토 후기 1명을 선정하여 <br>
+										<em class="t_point">30,000원 할인쿠폰</em>
+										을 드립니다.
+									</span>
+								</li>
+								<li>
+									<span class="img">
+										<strong class="t_point">30,000 <em>점</em></strong>
+										<span class="s_txt">포토 후기 마일리지</span>
+									</span>
+									<span class="txt">
+										포토 후기를 올려주신 고객님께  <br>
+										<em class="t_point">1,000~3,000점의 마일리지</em>
+										를 드립니다.
+									</span>
+								</li>
+								<li>
+									<span class="img">
+										<strong class="t_point">30,000 <em>점</em></strong>
+										<span class="s_txt">상품 후기 마일리지</span>
+									</span>
+									<span class="txt">
+										상품 후기를 올려주신 고객님께 <br>
+										<em class="t_point">1,000점의 마일리지</em>
+										를 드립니다.
+									</span>
+								</li>
+							</ul>
+						</div>
+						<div class="total_rating">
+							<dl class="detail">
+								<dt>구매고객 총 평점</dt>
+								<dd>
+									<ul class="service_list">
+										<li>
+											<em class="tit">서비스</em>
+											<span class="star_sel_set">
+												<span class="star_sel star_80"></span>
+												<strong class="num">4.0</strong>
+											</span>
+										</li>
+										<li>
+											<em class="tit">배송</em>
+											<span class="star_sel_set">
+												<span class="star_sel star_100"></span>
+												<strong class="num">5.0</strong>
+											</span>
+										</li>
+										<li>
+											<em class="tit">상품</em>
+											<span class="star_sel_set">
+												<span class="star_sel star_100"></span>
+												<strong class="num">5.0</strong>
+											</span>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+							<div class="short">
+								<span class="star_sel_set">
+									<span class="star_sel02 star_100"></span>
+									<strong class="num">5.0</strong>
+									<em class="total">
+										<em class="dash">/</em>
+										<em class="t_num">5</em>
+									</em>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="table_head">
+						<div class="click_nav">
+							<div class="on"><a href="#">전체<span class="num">(<em class="t_point">1</em>)</span></a></div>
+							<div><a href="#">포토<span class="num">(<em class="t_point">1</em>)</span></a></div>
+						</div>
+						<div class="write_btn right_btn"><a href="#">상품후기 쓰기</a></div>
+					</div>
+					<div class="board03">
+						<ul class="list">
+							<li>
+								<a href="#" class="review_area">
+									<div class="short">
+										<div class="cont">
+											<span class="star_sel_set">
+												<span class="star_sel star_100"></span>
+												<strong class="num">5</strong>
+											</span>
+											<p class="txt">생각보다 큰 부피 생각보다 큰 덩치의 캐리어 생각보다 단단한 외관 생각보다 튼튼한 손잡이와 휠 생각보다 짜임새 있는 내부 생각보다 빠른 배송 생각보다 빠른 피드백 등 괜찮은 캐리어와 사이트입니다~~ ?</p>
+											<span class="infos">
+												<em class="info">neo****(20대)</em>
+												<em class="info">2018.11.01</em>
+											</span>
+										</div>
+									</div>
+									<div class="full">
+										<ul class="service_list">
+											<li><em class="tit">서비스</em><span class="star_sel_set"><span class="star_sel star_80"></span><strong class="num">4</strong></span></li>
+											<li><em class="tit">배송</em><span class="star_sel_set"><span class="star_sel star_100"></span><strong class="num">4</strong></span></li>
+											<li><em class="tit">상품</em><span class="star_sel_set"><span class="star_sel star_100"></span><strong class="num">4</strong></span></li>
+										</ul>
+										<p class="txt">
+											생각보다 큰 부피<br> 생각보다 큰 덩치의 캐리어 <br>생각보다 단단한 외관<br> 생각보다 튼튼한 손잡이와 휠<br> 생각보다 짜임새 있는 내부<br> 생각보다 빠른 배송 생각보다 빠른 피드백 등 괜찮은 캐리어와 사이트입니다~~ ?
+										</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="paginate">
+						<ul>
+							<li class="select"><a href="#">1</a></li>
+							
+						</ul>
+					</div>
+				</div>
+	
+				<div class="prd_qna con03">
+					<div class="table_head">
+						<h5 class="tit_h5">상품Q&A (<em class="t_point">1</em>)</h5>
+						<p class="txt">
+							상품 관련 문의사항만 등록해주세요. 회원, 혜택, 이용문의,주문, A/S 사항 등은 고객센터 1:1 문의하기에서 문의 바랍니다.
+							 <a href="#" class="btn_view_more"><b>1:1 문의하기</b></a>
+						</p>
+						<div class="Contact_btn right_btn"><a href="#">문의하기</a></div>
+					</div>
+					<div class="board04">
+						<table>
+							<colgroup>
+								<col span="1" style="width:13%;">
+								<col span="1" style="width:63%;">
+								<col span="1" style="width:11%;">
+								<col span="1" style="width:13%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">답변상태</th>
+									<th scope="col">제목</th>
+									<th scope="col">작성자</th>
+									<th scope="col">등록일</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="prd_qna_q">
+									<td class="status">답변완료</td>
+									<td class="left">
+										<div class="prd_qna_short"><a href="#"><span class="txt">튼튼할까요;;</span></a></div>
+									</td>
+									<td>추민*</td>
+									<td>2018-10-31</td>
+								</tr>
+								<tr class="prd_qna_view ">
+									<td colspan="4">
+										<div class="prd_qna_full">
+											<div class="cnt">
+												<span class="ico">Q</span>
+												<p class="txt">
+													믿을수 있는 사이트라 구매를 진행하였는데 이 브랜드의 캐리어가 <br>1년정도쯤에 깨진다는 말이 들려 문의해봅니다~~괜찮을까요
+												</p>
+											</div>
+											<div class="cnt">
+												<span class="ico answer">A</span>
+												<p class="txt">
+													안녕하세요 고객님<br>
+													트래블메이트를 이용해 주셔서 감사합니다.
+													<br><br>
+													캐리어의 파손은 대게 항공사 취급 부주의로인한 수하물 파손입니다.<br>
+													일반적인 사용으로는 깨지기 힘들어요..<br>
+													다만 깨지지 않는 캐리어란 아예 없기때문에 그 부분이 걱정되신다면<br>
+													여행전에 여행자보험을 들어놓으시면 됩니다.
+													참고해주세요.
+													<br>
+													<br>
+													더 궁금하신 사항 있으시면 언제든 문의하시고요.<br>
+													즐거운 여행 준비 되시길 바랄게요 :)<br>
+													감사합니다.
+												</p>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr class="prd_qna_q">
+									<td class="status">답변완료</td>
+									<td class="left">
+										<div class="prd_qna_short"><a href="#"><span class="txt">woody42</span></a></div>
+									</td>
+									<td>추민*</td>
+									<td>2018-10-31</td>
+								</tr>
+								<tr class="prd_qna_view ">
+									<td colspan="4">
+										<div class="prd_qna_full">
+											<div class="cnt">
+												<span class="ico">Q</span>
+												<p class="txt">
+													이 제품(6702-70) 경칩이 2개인가요 3개인가요?
+												</p>
+											</div>
+											<div class="cnt">
+												<span class="ico answer">A</span>
+												<p class="txt">
+													안녕하세요^^ 박성미 고객님 <br>
+													<br>
+													저희 트래블메이트를 이용해주셔서 감사드립니다<br>
+													<br>
+													[레전드워커] 프리미엄 메탈 PC 100% TSA 특대형 <br>28형/70cm 여행가방(6702-70)<br>
+													상품 관련 문의해주셨는데요~<br>
+													<br>
+													문의하신 상품은 경첩이 2개 입니다<br>
+													<br>
+													구매하실 때 참고해주세요<br>
+													<br>
+													감사합니다 
+												</p>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="paginate">
+						<ul>
+							<li class="select"><a href="#">1</a></li>
+							
+						</ul>
+					</div>
+				</div>
+				<div class="shp_infor  con04">
+					<h5 class="tit_h5">배송/교환/반품/AS 안내</h5>
+					<div class="table">
+						<table>
+							<!-- <colgroup>
+								<col span="1" style="width:15%;">
+								<col span="1" style="width:89%;">
+							</colgroup> -->
+							<tr>
+								<th class="row left" >배송안내</th>
+								<td class="left">
+									* 결제완료 후 1~2일이내에 배송됩니다. (단. 도서/산간지역 제외)<br>
+									* 의류의 경우 재고여부에 따라서 2~3일 이내에 배송되며, 별도의 택배사로 개별 배송됩니다. <br>
+									* 1회 주문금액이 4만원 이상이면 무료배송 됩니다. <br>
+									* 제주도/도서/산간지역에는 배송비가 별도로 추가됩니다.<br>
+									* 브랜드별로 배송출고/반품 주소지가 다를 수 있습니다. <br>
+									* 브랜드별로 오늘배송 마감시간이 다를 수 있습니다.<br>
+								</td>
+							</tr>
+							<tr>
+								<th class="row left" >교환/반품안내</th>
+								<td class="left">
+									교환/반품 신청은 고객만족센터 1:1문의를 통해 신청하거나 고객센터 1599-2682로 접수해주세요.<br>
+									색상 및 사이즈 교환 시 택(Tag)을 뜯지 않은 상태로 반송하여 주시고, 제품 또는 케이스가 훼손되거나 택(Tag)을 뜯은 <br>경우에는 교환/반품이 되지 않습니다. <br>
+									교환은 고객님이 보내주신 제품이 물류센터에 도착 후 교환할 제품으로 보내드립니다. <br>
+									* 브랜드별 반품 시 반품 배송비를 별도 부담합니다. <br>
+									* 브랜드별로 배송출고/반품 주소지가 다를 수 있습니다.<br>
+								</td>
+							</tr>
+							<tr>
+								<th class="row left" >AS안내</th>
+								<td class="left">
+									트래블메이트는 전 상품 1년 무상 A/S 가능하며, 그 이후로는 유상으로 3년 A/S 보장합니다.<br>
+									교환/반품 신청은 고객만족센터 1:1문의를 통해 신청하거나 고객센터 1599-2682로 접수해주세요.<br>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="brand_prd">
+					<h4 class="tit_h4">레전드워커</h4>
+					<a href="#" class="left go_link">브랜드 샵 보러가기</a>
+					<ul>
+						<li>
+							<div class="produnit">
+								<a href="#">
+									<span class="thumb"><img src="./img/brand_prd01.jpg" alt=""></span>
+									<span class="brand">레전드워커</span>
+									<span class="title">[레전드워커] arc TSA 특대형 27형/69cm 여행가방(5402-69)</span>
+									<span class="price">
+										<span class="base">168,000</span>
+										<span class="discount">85,000</span>
+									</span>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="produnit">
+								<a href="#">
+									<span class="thumb"><img src="./img/brand_prd02.jpg" alt=""></span>
+									<span class="brand">레전드워커</span>
+									<span class="title">[레전드워커] 라이트닝 PC100% TSA 수하물 22형/56cm 여행가방(5103-56)</span>
+									<span class="price">
+										<span class="base">250,000</span>
+										<span class="discount">180,000</span>
+									</span>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="produnit">
+								<a href="#">
+									<span class="thumb"><img src="./img/brand_prd03.jpg" alt=""></span>
+									<span class="brand">레전드워커</span>
+									<span class="title">[레전드워커] 메탈프레임 PC100% TSA 수하물 22형/55cm 여행가방(5188-55)</span>
+									<span class="price">
+										<span class="base">270,000</span>
+										<span class="discount">170,000</span>
+									</span>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="produnit">
+								<a href="#">
+									<span class="thumb"><img src="./img/brand_prd04.jpg" alt=""></span>
+									<span class="brand">레전드워커</span>
+									<span class="title">[레전드워커] 와이드 메탈 PC100% 수하물 24형/62cm 여행가방(6303-62)</span>
+									<span class="price">
+										<span class="base">400,000</span>
+										<span class="discount">297,000</span>
+									</span>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="produnit">
+								<a href="#">
+									<span class="thumb"><img src="./img/brand_prd05.jpg" alt=""></span>
+									<span class="brand">레전드워커</span>
+									<span class="title">[레전드워커] 트래블미터 PC100% TSA 특대형 26형/64cm 여행가방(6703N-64)</span>
+									<span class="price">
+										<span class="base">400,000</span>
+										<span class="discount">303,000</span>
+									</span>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="produnit">
+								<a href="#">
+									<span class="thumb"><img src="./img/brand_prd06.jpg" alt=""></span>
+									<span class="brand">레전드워커</span>
+									<span class="title">[레전드워커] 라이트닝 PC100% TSA 수하물 25형/62cm 여행가방(5103-62)</span>
+									<span class="price">
+										<span class="base">320,000</span>
+										<span class="discount">230,000</span>
+									</span>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="produnit">
+								<a href="#">
+									<span class="thumb"><img src="./img/brand_prd07.jpg" alt=""></span>
+									<span class="brand">레전드워커</span>
+									<span class="title">[레전드워커] 메탈프레임 PC100% TSA 수하물 24형/60cm 여행가방(5188-60)</span>
+									<span class="price">
+										<span class="base">290,000</span>
+										<span class="discount">183,000</span>
+									</span>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="produnit">
+								<a href="#">
+									<span class="thumb"><img src="./img/brand_prd08.jpg" alt=""></span>
+									<span class="brand">레전드워커</span>
+									<span class="title">[레전드워커] 트래블미터 PC100% TSA 특대형 28형/70cm 여행가방(6703N-70)</span>
+									<span class="price">
+										<span class="base">420,000</span>
+										<span class="discount">318,000</span>
+									</span>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="produnit">
+								<a href="#">
+									<span class="thumb"><img src="./img/brand_prd09.jpg" alt=""></span>
+									<span class="brand">레전드워커</span>
+									<span class="title">[레전드워커] 라이트닝 PC100% TSA 기내용 19형/49cm 여행가방(5103-49)</span>
+									<span class="price">
+										<span class="base">210,000</span>
+										<span class="discount">151,000</span>
+									</span>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="produnit">
+								<a href="#">
+									<span class="thumb"><img src="./img/brand_prd10.jpg" alt=""></span>
+									<span class="brand">레전드워커</span>
+									<span class="title">[레전드워커] 메탈 PC100% TSA 특대형 28형/70cm 여행가방(6026-70)</span>
+									<span class="price">
+										<span class="base">360,000</span>
+										<span class="discount">259,000</span>
+									</span>
+								</a>
+							</div>
+						</li>
+					
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="quick_menu">
+			<ul class="quick_side">
+				<li class="quick_btn_cart">
+					<button type="button" name="quCart"><span class="icon"></span><span class="number" id="quickCartCount">0</span></button>
+				</li>
+				<li class="quick_btn_history">
+					<button type="button" name="quHistory"><span class="icon"></span><span class="number" id="quickTodayProductCount">1</span></button>
+				</li>
+				<li class="to_direction">
+					<span class="to_bottom"></span>
+					<span class="to_top"></span>
+				</li>
+			</ul>
+			<div class="quick_cont quCart">
+				<h2>장바구니</h2>
+				<div class="scroll_area">
+					<div class="mCustomScrollBox">
+						<div class="mCSB_container">
+							
+								
+						</div>
+						<div class="mCSB_scrollTools"></div>
+					</div>
+				</div>
+				<button type="button" name="button" class="close"></button>
+			</div>
+			<div class="quick_cont quHistory ">
+				<h2>오늘본 상품</h2>
+				<div class="scroll_area">
+					<div class="mCustomScrollBox">
+						<div class="mCSB_container">
+							<ul>
+								<li><a href="#">
+									<div class="img"><img src="./img/A1.jpg" alt=""></div>
+									<span class="con">
+										<span class="tit1">레전드워커</span>
+										<span class="tit2">[레전드워커] 프리미엄 메탈 PC100% TSA 특대형 28형/70cm 여행가방(6702-70)</span>
+									</span>
+									</a>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="mCSB_scrollTools"></div>
+					</div>
+				</div>
+				<button type="button" name="button" class="close"></button>
+			</div>
+		</div>
+		<footer id="ft">
+			<div class="ft_menu">
+				<ul>
+					<li><a href="#">회사소개</a></li>
+					<li class="on"><a href="#">제휴/입점문의</a></li>
+					<li><a href="#">채용안내</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">개인정보취급방침</a></li>
+					<li><a href="#">이메일주소수집거부</a></li>
+
+				</ul>
+				<ul>
+					<li><a href="#">매장안내</a></li>
+					<li><a href="#">고객만족센터</a></li>
+				</ul>
+			</div>
+			<div class="f_info">
+				<ul>
+					<li>
+						<ul class="sns">
+							<li class="ft_logo"></li>
+							<li class="item1"><a href="#"></a></li>
+							<li class="item2"><a href="#"></a></li>
+							<li class="item3"><a href="#"></a></li>
+							<li class="item4"><a href="#"></a></li>
+						</ul>
+						<address>
+						서울시 금천구 가산동 371-16(가산디지털 1로 137)IT캐슬 2차 18층<span></span> 대표이사 : 김문일	<span></span> 	고객센터 : 1599-2682 	<span></span>  팩스 : 02)6919-2558		<br>
+							문의메일 : tm@travelmate.co.kr	<span></span> 사업자등록번호 : 114-86-16799 	<span></span> 통신판매업신고번호 : 제 2014-서울nav금천-0129호		<br>
+							개인정보관리 책임자 : 김문일	
+							<p class="copy">COPYRIGHT TRAVEL MATE CORP ALL RIGHTS RESERVED.</p>
+						</address>
+					</li>
+					<li>
+						<div class="f_banner">
+							<p>소비자피해보상보험</p>
+							<p>고객님의 안전 거래를 위해 현금으로 결제 시 저희 쇼핑몰에서 가입한 구매 안전서비스인 소비자 피해보상 보험 서비스를 실행하고 있습니다.</p>
+							<a href="#">서비스 가입사실 확인</a>
+						</div>
+						<ul class="f_award">
+							<li class="item1"></li>
+							<li class="item2"></li>
+							<li class="item3"></li>
+							<li class="item4"></li>
+							<li class="item5"></li>
+						</ul>
+					</li>
+				</ul>
+
+			</div>
+
+		</footer>
+	
+
+	</div>
+</body>
+</html>

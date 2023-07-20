@@ -1,0 +1,104 @@
+.star_sel_set{
+	display:inline-block;
+}
+.star_sel_set .num {
+	display:inline-block;
+	
+	font-weight:600;
+	margin-left:5px;
+	color:#1c1c1c;
+	font-size:13px;
+}
+.star_sel{
+	display:inline-block;
+	font-size:0;
+	text-indent:-9999px;
+	overflow:hidden;
+	width:77px;
+	height:12px;
+	background-image:url('../img/ico_prd_star02.png');
+	background-size: 100%;
+	background-repeat:no-repeat;
+	background-position:0 0;
+}
+.star_sel.star_0{
+	background-position:0 -1px;
+}
+.star_sel.star_10{
+	background-position:0 -18px;
+}
+.star_sel.star_20{
+	background-position:0 -37px;
+}
+.star_sel.star_30{
+	background-position:0 -54px;
+}
+.star_sel.star_40{
+	background-position:0 -72px;
+}
+.star_sel.star_50{
+	background-position:0 -90px;
+}
+.star_sel.star_60{
+	background-position:0 -107px;
+}
+.star_sel.star_70{
+	background-position:0 -125px;
+}
+.star_sel.star_80{
+	background-position:0 -143px;
+}
+.star_sel.star_90{
+	background-position:0 -159px;
+}
+.star_sel.star_100{
+	background-position:0 -178px;
+}
+
+.star_sel02{
+	display:inline-block;
+	font-size:0;
+	text-indent:-9999px;
+	overflow:hidden;
+	width:131px;
+	height:20px;
+	background-image:url('../img/ico_prd_star02.png');
+	background-size: 100%;
+	background-repeat:no-repeat;
+	background-position:0 0;
+}
+
+.star_sel02.star_0{
+	background-position:0 -1px;
+}
+
+.star_sel02.star_10{
+	background-position:0 -31px;
+}
+.star_sel02.star_20{
+	background-position:0 -61px;
+}
+.star_sel02.star_30{
+	background-position:0 -92px;
+}
+.star_sel02.star_40{
+	background-position:0 -122px;
+}
+.star_sel02.star_50{
+	background-position:0 -152px;
+}
+.star_sel02.star_60{
+	background-position:0 -182px;
+}
+.star_sel02.star_70{
+	background-position:0 -212px;
+}
+.star_sel02.star_80{
+	background-position:0 -242px;
+}
+.star_sel02.star_90{
+	background-position:0 -272px;
+}
+.star_sel02.star_100{
+	background-position:0 -302px;
+}
